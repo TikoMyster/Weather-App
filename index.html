@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+             <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <title>Weather Display</title>
+
+    </head>
+
+    <body>
+
+        <header>
+            <h1 class="p-4 text-light text-center h1">Weather Display Board</h1>
+        </header>
+        <div class="m-4 p-4">
+            <div class="col-md-20">
+                <div class="row">
+                <div class="col-sm-3 bg-secondary">
+                    <h4 class="pt-1"><strong>Type City Name Here:</strong></h4>
+
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="input" placeholder="Seattle">
+                        <div class="input-group-append">
+
+                        </div>
+                    </div>
+                    <button type="submit" id="search-button" class="btn_border buttontext">Search</button>
+
+                    <ul class="list-group">
+
+                    </ul>
+                </div>
+                <div class="col-sm-25" id="current-weather">
+                    <div class="card mt-2 card-body border rounded" id="card-body">
+                        <div class="card mt-2">
+                            <div class="card-body">
+                                <div class="d-flex flex-row">
+                                    <h2 class="card-title align-self-center" id="current-city"></h2>
+
+                                </div>
+                                <h6 class="card-subtitle mt-4"><p>Temperature:</p><p id="fahrenheit"></p></h6>
+                            <h6 class="card-subtitle mt-4"><p>Humidity:</p><p id="humidity"></p></h6>
+                            <h6 class="card-subtitle mt-4"><p>Wind speed:</p><p id="wind-speed"></p></h6>
+                            </div>
+                        </div>
+                        <div class="col-m-30" id="weather-forcast">
+                            <h3>Future Forcast:</h3>
+                            <div class="row flex">
+                                <div class="col-sm-2 forecast text-black border bgcolor">
+                                    <div id="Date0"></div>
+                                    <div id="Img0"></div>
+                                    <div>Temp:<span id="Temp0"></span></div>
+                                    <div>Humidity:<span id="Humidity0"></span></div>
+                                    <div>Wind speed:<span id="Wind0"></span></div>
+                                </div>
+                                <div class="col-sm-2 forecast text-black border bgcolor">
+                                    <div id="Date1"></div>
+                                    <div id="Img1"></div>
+                                    <div>Temp:<span id="Temp1"></span></div>
+                                    <div>Humidity:<span id="Humidity1"></span></div>
+                                    <div>Wind speed:<span id="Wind1"></span></div>
+                                </div>
+                                <div class="col-sm-2 forecast text-black border bgcolor">
+                                    <div id="Date2"></div>
+                                    <div id="Img2"></div>
+                                    <div>Temp:<span id="Temp2"></span></div>
+                                    <div>Humidity:<span id="Humidity2"></span></div>
+                                    <div>Wind speed:<span id="Wind2"></span></div>
+                                </div>
+                                <div class="col-sm-2 forecast text-black border bgcolor">
+                                    <div id="Date3"></div>
+                                    <div id="Img3"></div>
+                                    <div>Temp:<span id="Temp3"></span></div>
+                                    <div>Humidity:<span id="Humidity3"></span></div>
+                                    <div>Wind speed:<span id="Wind3"></span></div>
+                                </div>
+                                <div class="col-sm-2 forecast text-black border bgcolor">
+                                    <div id="Date4"></div>
+                                    <div id="Img4"></div>
+                                    <div>Temp:<span id="Temp4"></span></div>
+                                    <div>Humidity:<span id="Humidity4"></span></div>
+                                    <div>Wind speed:<span id="Wind4"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+
+        <script src="./assets/js/scripts.js"></script>
+    </body>
+
+</html>

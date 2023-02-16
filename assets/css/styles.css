@@ -1,0 +1,54 @@
+.bgcolor {
+    background-color: #483D8B
+}
+
+.border {
+    border: 3px solid black;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        display: grid;
+    }
+
+    section {
+        display: block;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .col-6 {
+        max-width: 100%;
+    }
+    
+}
+
+body {
+    font-family: 'Lucida Handwriting';
+    font-size: 16px;
+    font: bold;
+    line-height: 3;
+    color: #191970;
+    background-color: #4682B4;
+}
+
+header {
+    text-align: center;
+    background-color: #008B8B;
+    color: black;
+    padding: 15px;
+}
+
+.list-group {
+    cursor: pointer;
+    color: black;
+}
+
+.buttontext {
+    color: white;
+    background-color: #008B8B;
+    border: black;
+    padding-bottom: 2px;
+}
