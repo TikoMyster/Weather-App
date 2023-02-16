@@ -8,6 +8,10 @@ This application is a weather dashboard that uses a third party weather API. We 
 # Usage:
 To check current and future forecast of the weather.
 
+# Deployment
+
+https://tikomyster.github.io/Weather-App/ 
+
 ## Screenshot
 
 ![Alt text](assets/screenshots/Screenshot.png)
