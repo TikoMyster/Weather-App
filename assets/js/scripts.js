@@ -1,4 +1,4 @@
-var ApiKey = "108a84ae96ffbc66ffaabb3ee114d403";
+var apikey = "108a84ae96ffbc66ffaabb3ee114d403";
 
 var searchButton = $("#search-button");
 var City = $("#input")
@@ -34,7 +34,7 @@ let loadHistory = function() {
 }
 
 let currentcityWeather = function(city) {
-    var ApiURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + ApiKey + "&units=imperial";
+    var ApiURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apikey + "&units=imperial";
     $.ajax({
         url: ApiURL,
         method: "GET",
@@ -73,7 +73,7 @@ let currentcityWeather = function(city) {
 }
 
 let futureForecast = function(cityId) {
-    var futureURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + cityId + "&appid=" + ApiKey + "&units=imperial";
+    var futureURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + cityId + "&appid=" + apikey + "&units=imperial";
     $.ajax({
         url: futureURL,
         method: "GET"
