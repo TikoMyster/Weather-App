@@ -1,11 +1,11 @@
 var apikey = "108a84ae96ffbc66ffaabb3ee114d403";
 
 var searchButton = $("#search-button");
-var City = $("#input")
+var city = $("#input")
 var temp = $("#fahrenheit");
 
 var currentCity = $("#current-city");
-var Humidity = $("#humidity");
+var humidity = $("#humidity");
 var Wind = $("#wind-speed");
 
 var city = "";
@@ -47,7 +47,7 @@ let currentcityWeather = function(city) {
         var mainTemp = response.main.temp;
 
         $(temp).html(" " + (mainTemp).toFixed(2) + " &#8457");
-        $(Humidity).html("" + response.main.humidity + "%");
+        $(humidity).html("" + response.main.humidity + "%");
         var Speed = response.wind.speed;
         $(Wind).html("" + Speed + "" + "mph");
 
@@ -90,7 +90,7 @@ let futureForecast = function(cityId) {
             $("#Date" + i).html(day);
             $("#Img" + i).html("<img src=" + IconURL + ">");
             $("#Temp" + i).html(" " + futureTemp + " &#8457");
-            $("#Humidity" + i).html(" " + humidity + "%");
+            $("#humidity" + i).html(" " + humidity + "%");
             $("#Wind" + i).html(" " + windSpeed + " MPH");
         }
     });
